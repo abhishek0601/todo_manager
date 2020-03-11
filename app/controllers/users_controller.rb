@@ -7,8 +7,8 @@ class UsersController < ApplicationController
 
   def show
     id = params[:id]
-    todo = User.find(id)
-    render plain: todo.to_pleasant_string
+    user = User.find(id)
+    render plain: user.to_pleasant_string
   end
 
   def create
