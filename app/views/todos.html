@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <title>Todo Management App</title>
+  <link rel="stylesheet" type="text/css" href="todo-app.css">
+</head>
+
+<body>
+  <h1 class="TodoPage-Title">My Todo-list</h1>
+  <div class="TodoSectionTitle">
+    <input class="TodoSection-text" type="text" placeholder="What's next?">
+    <input class="TodoSection-date" type="date">
+    <input class="TodoSection-button" type="button" value="Add">
+  </div>
+  <article>
+    <section class="TodoSection">
+      <div>
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSection-title">Due Today</h2>
+          <p class="Completed-Label">0/4</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Submit SaaS 201 project</input>
+              <p class="Overdue-Label">Overdue</p>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Call Accountant</input>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="TodoSection">
+      <div>
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSection-title">Due Tomorrow</h2>
+          <p class="Completed-Label">0/3</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Refill groceries
+              </input>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="TodoSection">
+      <div>
+        <div class="TodoSectionTitle">
+          <h2 class="TodoSection-title">Remaining</h2>
+          <p class="Completed-Label">0/3</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Complete a course
+              <p class="Date-Label">April 1</p>
+              </input>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Pay the bills
+              <p class="Date-Label">April 2</p>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+              </input>
+            </label>
+          </li>
+          <li class="TodoItem">
+            <label class="TodoItem-container">
+              <input class="TodoSection-checkbox" type="checkbox">Purchase essential goods
+              <p class="Date-Label">April 3</p>
+              <a class="TodoItem-delete "><img src="trash.png">
+              </a>
+              </input>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>

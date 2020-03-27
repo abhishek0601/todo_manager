@@ -1,0 +1,129 @@
+body{
+  font-family: sans-serif;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.TodoSection-text{
+  width: 210px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px solid rgb(82, 73, 73);
+  padding: 16px 32px;
+  font-
+}
+
+::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+.TodoSection-date{
+  width: 130px;
+  margin: 8px 8px;
+  border-radius: 4px;
+  border: 1px solid rgb(82, 73, 73);
+  padding: 13px 25px;
+}
+
+.TodoSection-button{
+  width: 130px;
+  margin: 8px 0;
+  border-radius: 4px;
+  border: 1px transparent;
+  padding: 13px 25px;
+  background-color:rgb(71, 199, 126);
+  color: antiquewhite;
+  font-weight: 600;
+  font-size: medium;
+}
+
+ul{
+  list-style: none;
+  margin: 0 auto;
+}
+
+.TodoPage-Title{
+  font-size: 48px;
+  line-height: 1.6;
+  color: rgb(105, 91, 124);
+}
+
+.TodoSection-title{
+  font-size: 34px;
+  line-height: 1.4;
+  color: #453C52;
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.TodoSection-todo{
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
+  margin-left: 20px;
+}
+
+.TodoItem{
+  font-size: 20px;
+  line-height: 1.2;
+  color: rgb(75, 66, 66);
+  margin-left: 20px;
+}
+
+.TodoSection-checkbox{
+  width: 16px;
+  height: 16px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
+  margin-left: 20px;
+}
+
+.TodoItem-container{
+  display: inline-flex;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.Overdue-Label{
+  padding: 2px 10px;
+  color: rgb(198, 5, 5);
+}
+
+.Date-Label{
+  padding: 2px 10px;
+  color:rgb(112, 104, 104);
+  font-style: italic;
+}
+
+.TodoItem-delete{
+  visibility: hidden;
+  margin-left: 8px;
+}
+
+.TodoItem-delete > img{
+  width: 20px;
+}
+
+.TodoItem-container:hover .TodoItem-delete{
+  visibility: visible;
+}
+
+.TodoSectionTitle{
+  display: flex;
+  color: #453C52;
+  align-items: center;
+  max-resolution: 10%;
+}
+
+.Completed-Label{
+  font-size: 28px;
+}
+
+.TodoSection{
+  margin: 0 auto;
+}
