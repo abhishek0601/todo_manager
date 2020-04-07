@@ -88,11 +88,6 @@ ul{
   align-items: center;
 }
 
-.Overdue-Label{
-  padding: 2px 10px;
-  color: rgb(198, 5, 5);
-}
-
 .Date-Label{
   padding: 0px 10px;
   color:rgb(112, 104, 104);
@@ -126,4 +121,11 @@ ul{
 
 .TodoSection{
   margin: 0 auto;
+}
+
+.TodoItem-dueDate{
+  padding: 0px 10px;
+  color:rgb(112, 104, 104);
+  font-style: sans-serif;
+  font-size: 10px;
 }
