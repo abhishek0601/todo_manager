@@ -119,6 +119,17 @@ ul{
   margin-bottom: 0px;
 }
 
+.TodoSection-checkbox-completed{
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
+  margin-left: 20px;
+  margin-right: 8px;
+  transform: scale(1.5);
+  text-decoration: line-through;
+
+}
+
 .TodoSection{
   margin: 0 auto;
 }
