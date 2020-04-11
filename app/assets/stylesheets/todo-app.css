@@ -60,7 +60,6 @@ ul{
 }
 
 .TodoSection-todo{
-  font-size: 20px;
   line-height: 1.2;
   color: black;
   margin-left: 20px;
@@ -74,7 +73,6 @@ ul{
 }
 
 .TodoSection-checkbox{
-  font-size: 20px;
   line-height: 1.2;
   color: black;
   margin-left: 20px;
@@ -119,17 +117,6 @@ ul{
   margin-bottom: 0px;
 }
 
-.TodoSection-checkbox-completed{
-  font-size: 20px;
-  line-height: 1.2;
-  color: black;
-  margin-left: 20px;
-  margin-right: 8px;
-  transform: scale(1.5);
-  text-decoration: line-through;
-
-}
-
 .TodoSection{
   margin: 0 auto;
 }
@@ -139,4 +126,15 @@ ul{
   color:rgb(112, 104, 104);
   font-style: sans-serif;
   font-size: 10px;
+}
+
+.Todo-Display-Completed{
+  font-size: 20px;
+  color: rgb(75, 66, 66);
+  text-decoration: line-through;
+}
+
+.Todo-Display{
+  font-size: 20px;
+  color: rgb(75, 66, 66);
 }

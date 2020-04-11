@@ -3,23 +3,21 @@
     <h2 class="TodoSection-title"><%= section_title %></h2>
     <p class="Completed-Label"><%= todos.completed.count %>/<%= todos.count %></p>
   </div>
-   <ul>
+  <ul>
     <% todos.each do |todo| %>
-     <li class="TodoItem">
-      <label class="TodoItem-container">
-        <% if todo.completed %>
-          <input class="TodoSection-checkbox-completed" type="checkbox" checked="checked"/>
-        <% else %>
-          <input class="TodoSection-checkbox" type="checkbox"/>
-        <% end %>
-        <%= todo.todo_text %>
-        <% if show_due_date %>
-          <p class="TodoItem-dueDate"><%= todo.due_date.to_s(:short) %> </p>
-        <% end %>
-        <a class="TodoItem-delete "><img src="trash.png">
-     </a>
-    </label>
-   </li>
-  <% end %>
- </ul>
+        <li class="TodoItem">
+          <label class="TodoItem-container">
+            <% check = (todo.completed)? "checked": "" %>
+            <input class="TodoSection-checkbox" type="checkbox" <%=check%>/>
+            <%class_name = (todo.completed)? "Todo-Display-Completed": "Todo-Display"%>
+            <p class=<%=class_name%>><%= todo.todo_text %></p>
+            <% if show_due_date %>
+              <p class="TodoItem-dueDate"><%= todo.due_date.to_s(:short) %> </p>
+            <% end %>
+            <a class="TodoItem-delete "><img src="trash.png">
+            </a>
+          </label>
+        </li>
+   <% end %>
+  </ul>
 </section>
