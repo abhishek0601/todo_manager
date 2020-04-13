@@ -8,13 +8,11 @@
         <li class="TodoItem">
           <div class="TodoItem-container">
             <%= form_with(url: "/todos/#{todo.id}" , method: "put") do %>
-              <% check = (todo.completed)? "checked": "" %>
-              <input
-              class="TodoSection-checkbox"
-              name="completed"
-              type="checkbox" <%=check%>
-              onclick="this.form.submit()"
-              />
+              <%= check_box_tag("completed",
+                  value=nil,
+                  checked=todo.completed,
+                  {onclick: "this.form.submit()",
+                  class: "TodoSection-checkbox"})%>
             <% end %>
 
             <%class_name = (todo.completed)? "Todo-Display-Completed": "Todo-Display"%>
@@ -25,7 +23,7 @@
             <% end %>
             <a class="TodoItem-delete ">
               <%=form_with(url: "/todos/#{todo.id}" , method: "delete") do %>
-                <input type="image" src="trash.svg">
+                <%=image_submit_tag("trash.svg") %>
               <% end %>
             </a>
           </div>
