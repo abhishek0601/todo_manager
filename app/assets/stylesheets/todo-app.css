@@ -98,9 +98,6 @@ ul{
   margin-left: 8px;
 }
 
-.TodoItem-delete > img{
-  width:20px;
-}
 
 .TodoItem-container:hover .TodoItem-delete{
   visibility: visible;

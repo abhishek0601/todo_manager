@@ -23,7 +23,10 @@
             <% if show_due_date %>
               <p class="TodoItem-dueDate"><%= todo.due_date.to_s(:short) %> </p>
             <% end %>
-            <a class="TodoItem-delete "><img src="trash.png">
+            <a class="TodoItem-delete ">
+              <%=form_with(url: "/todos/#{todo.id}" , method: "delete") do %>
+                <input type="image" src="trash.svg">
+              <% end %>
             </a>
           </div>
         </li>
