@@ -1,11 +1,11 @@
 <main class="TodoPageMain">
   <article>
     <h1 class="TodoPage-Title">My Todo-list</h1>
-    <form class="TodoSectionTitle" action="/todos" method="POST">
+    <%=form_with(url: "/todos", method: "post", class: "TodoSectionTitle") do %>
       <input class="TodoSection-text" name="todo_text" type="text" placeholder="What's next?">
       <input class="TodoSection-date" name="due_date" type="date">
       <input class="TodoSection-button" type="submit" value="Add">
-    </form>
+    <% end %>
 
     <%= render partial: "todo-section", locals: {
       section_title:"Overdue",
