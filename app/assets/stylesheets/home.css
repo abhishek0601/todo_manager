@@ -9,3 +9,10 @@
   margin-bottom: 20px;
   color: rgb(43, 41, 41);
 }
+
+.UserHeader{
+  padding: 10px;
+  background-color: darkgrey;
+  font-size: 14px;
+  margin-bottom: 10px;
+}

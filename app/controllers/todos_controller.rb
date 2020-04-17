@@ -1,6 +1,7 @@
 # todos_controller.rb
 class TodosController < ApplicationController
   def index
+    current_user
     render "index"
   end
 
