@@ -12,20 +12,21 @@ class UsersController < ApplicationController
   end
 
   def create
-    name = params[:name]
-    email = params[:email]
-    password = params[:password]
-    new_user = User.create!(
-      name: name,
-      email: email,
-      password: password,
+    User.create!(
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      email: params[:email],
+      password: params[:password],
     )
-    response_text = "Hey! New User has been created..."
-    render plain: response_text
+    redirect_to "/"
   end
 
   def validate
     check_user = User.where("email=? and password =?", params[:email], params[:password]).exists?
     render plain: check_user
+  end
+
+  def new
+    render "users/new"
   end
 end
