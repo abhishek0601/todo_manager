@@ -12,7 +12,8 @@
                   value=nil,
                   checked=todo.completed,
                   {onclick: "this.form.submit()",
-                  class: "TodoSection-checkbox"})%>
+                  class: "TodoSection-checkbox"})
+              %>
             <% end %>
 
             <%class_name = (todo.completed)? "Todo-Display-Completed": "Todo-Display"%>
@@ -22,8 +23,8 @@
               <p class="TodoItem-dueDate"><%= todo.due_date.to_s(:short) %> </p>
             <% end %>
             <a class="TodoItem-delete ">
-              <%=form_with(url: "/todos/#{todo.id}" , method: "delete") do %>
-                <%=image_submit_tag("trash.svg") %>
+              <%= form_with(url: "/todos/#{todo.id}" , method: "delete") do %>
+                <%= image_submit_tag("trash.svg") %>
               <% end %>
             </a>
           </div>
